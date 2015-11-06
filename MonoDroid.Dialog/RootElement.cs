@@ -377,9 +377,9 @@ namespace MonoDroid.Dialog
             dialog.Create().Show();
         }
 
-        void IDialogInterfaceOnClickListener.OnClick(IDialogInterface dialog, DialogInterfaceButton which)
+        void IDialogInterfaceOnClickListener.OnClick(IDialogInterface dialog, Int32 which)
         {
-            if ((int)which >= 0)
+            if (which >= 0)
             {
                 this.RadioSelected = (int)which;
                 string radioValue = GetSelectedValue();
